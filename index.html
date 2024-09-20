@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinWEAO | Executor Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <h1>Minimals WEAO</h1>
+    <div class="container">
+        <div class="section-buttons">
+            <a href="#exploit-status-section" class="button"> <button>Executor Status</button></a>
+            <a href="#current-versions-section" class="button"><button>Current Versions</button></a>
+            <a href="#future-versions-section" class="button"><button>Future Versions</button></a>
+            <a href="#android-version-section" class="button"><button>Android Version</button></a>
+        </div>
+        
+        <div class="section" id="exploit-status-section">
+            <h2 class="section-title">Executor Status</h2>
+            <div class="exploit-status" id="exploit-status">Loading...</div>
+        </div>
+        
+        <div class="section" id="current-versions-section">
+            <h2 class="section-title">Current Roblox Versions</h2>
+            <div id="current-versions" class="version-cards">Loading...</div>
+        </div>
+        
+        <div class="section" id="future-versions-section">
+            <h2 class="section-title">Future Roblox Versions</h2>
+            <div id="future-versions" class="version-cards">Loading...</div>
+        </div>
+        
+        <div class="section" id="android-version-section">
+            <h2 class="section-title">Android Version</h2>
+            <div id="android-version" class="version-cards">Loading...</div>
+        </div>
+        
+        <footer>
+            <a>Made By ByteSizedFile | Powered by whatexpsare.online</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
