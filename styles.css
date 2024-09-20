@@ -43,6 +43,14 @@ h1 {
     text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
 }
 
+.subtitle {
+    padding-top: 1em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
